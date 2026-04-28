@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#88ceff",
+                      "outline": "#6f7881",
+                      "secondary-fixed-dim": "#bfc7d4",
+                      "on-tertiary-fixed-variant": "#005236",
+                      "background": "#f8f9fa",
+                      "on-tertiary-container": "#003421",
+                      "inverse-on-surface": "#f0f1f2",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#c8e6ff",
+                      "on-primary-fixed": "#001e2f",
+                      "on-secondary-container": "#5d6570",
+                      "on-background": "#191c1d",
+                      "tertiary-fixed-dim": "#66dca6",
+                      "primary": "#006590",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed-variant": "#3f4752",
+                      "on-surface": "#191c1d",
+                      "on-primary-container": "#003048",
+                      "surface-container-high": "#e7e8e9",
+                      "on-secondary-fixed": "#141c26",
+                      "surface-variant": "#e1e3e4",
+                      "surface-dim": "#d9dadb",
+                      "tertiary": "#006c49",
+                      "secondary-container": "#dbe3f1",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#27a776",
+                      "secondary-fixed": "#dbe3f1",
+                      "surface-container": "#edeeef",
+                      "on-error": "#ffffff",
+                      "primary-fixed-dim": "#88ceff",
+                      "primary-container": "#149ddd",
+                      "on-surface-variant": "#3e4850",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed": "#83f9c1",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "inverse-surface": "#2e3132",
+                      "secondary": "#575f6a",
+                      "outline-variant": "#bec8d1",
+                      "surface-bright": "#f8f9fa",
+                      "on-tertiary-fixed": "#002113",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-fixed-variant": "#004c6e",
+                      "surface-container-low": "#f3f4f5",
+                      "surface": "#f8f9fa",
+                      "surface-tint": "#006590"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "sidebar-width": "300px",
+                      "stack-md": "16px",
+                      "stack-sm": "8px",
+                      "gutter": "24px",
+                      "section-padding": "100px",
+                      "stack-lg": "32px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Space Grotesk"],
+                      "nav-link": ["Inter"],
+                      "body-md": ["Newsreader"],
+                      "headline-md": ["Space Grotesk"],
+                      "label-caps": ["Inter"],
+                      "body-lg": ["Newsreader"],
+                      "display-hero": ["Space Grotesk"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                      "nav-link": ["15px", {"lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                      "body-md": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                      "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-hero": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-surface">
+<aside class="fixed h-screen w-[300px] left-0 top-0 hidden md:flex flex-col bg-[#050d18] border-r border-slate-800 shadow-2xl z-50 font-['Space_Grotesk'] text-sm tracking-wide">
+<div class="flex flex-col py-10 px-6 space-y-8 h-full">
+<div class="flex flex-col items-center space-y-4">
+<div class="w-32 h-32 rounded-full border-4 border-slate-800 overflow-hidden">
+<img alt="Portrait of Muhammad Zumar Fahmi Rizky" class="w-full h-full object-cover" data-alt="Professional portrait of a middle-eastern scholar in modern academic attire, soft studio lighting, neutral background, authoritative and friendly expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4ohQglHE78WqK-2IJaj3vL2Gu16aIKbrKkYTa5sBZM-mOG2GgFhO8m4yz9Nt25cQp-sYknN7IJBKbfoWSjUM5k-Slw6Q0EisSBn_WJVZfAdqWitSPub9Z-vSaR2iuMcxTjadmOOVeC5F7vlU8ELPYZKWHfcI1tRkcQA2fzvMS9KO1I3AzCgRqOJwmzGn67BJmL-0MgC2vZowuRZ3RJVCg1xdBESIu_mA8WmXMLOr7KJxYMncLpVopGBzP6MONHQ0pRb9CVmDkzrU"/>
+</div>
+<div class="text-center">
+<h1 class="text-white text-xl font-bold mb-1">Muhammad Zumar Fahmi Rizky</h1>
+<p class="text-slate-400 text-xs uppercase tracking-widest">Islamic Education Scholar</p>
+</div>
+</div>
+<nav class="flex flex-col flex-grow space-y-2">
+<a class="flex items-center space-x-3 py-3 text-slate-400 hover:text-white transition-colors duration-300 pl-4 hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="home">home</span>
+<span class="font-nav-link text-nav-link">Home</span>
+</a>
+<a class="flex items-center space-x-3 py-3 text-slate-400 hover:text-white transition-colors duration-300 pl-4 hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="person">person</span>
+<span class="font-nav-link text-nav-link">About</span>
+</a>
+<a class="flex items-center space-x-3 py-3 text-slate-400 hover:text-white transition-colors duration-300 pl-4 hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="work">work</span>
+<span class="font-nav-link text-nav-link">Portfolio</span>
+</a>
+<a class="flex items-center space-x-3 py-3 text-slate-400 hover:text-white transition-colors duration-300 pl-4 hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="description">description</span>
+<span class="font-nav-link text-nav-link">Resume</span>
+</a>
+<a class="flex items-center space-x-3 py-3 text-[#149DDD] font-semibold border-l-4 border-[#149DDD] bg-sky-500/10 pl-4" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="settings">settings</span>
+<span class="font-nav-link text-nav-link">Service</span>
+</a>
+<a class="flex items-center space-x-3 py-3 text-slate-400 hover:text-white transition-colors duration-300 pl-4 hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="mail">mail</span>
+<span class="font-nav-link text-nav-link">Contact</span>
+</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-slate-800 space-y-2">
+<a class="flex items-center space-x-3 py-2 text-slate-400 hover:text-[#149DDD] transition-all text-xs uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined text-base" data-icon="school">school</span>
+<span>Academic Profile</span>
+</a>
+<a class="flex items-center space-x-3 py-2 text-slate-400 hover:text-[#149DDD] transition-all text-xs uppercase tracking-widest" href="#">
+<span class="material-symbols-outlined text-base" data-icon="alternate_email">alternate_email</span>
+<span>Contact</span>
+</a>
+</div>
+</div>
+</aside>
+<main class="md:ml-[300px] min-h-screen flex flex-col">
+<section class="px-gutter py-section-padding max-w-7xl mx-auto w-full">
+<header class="mb-16">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] uppercase mb-4 block">Academic Expertise</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-6">Educational Services</h2>
+<div class="h-1.5 w-24 bg-primary-container rounded-full"></div>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="group bg-white p-10 rounded-xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-primary-container/30 transition-all duration-300 flex flex-col items-start">
+<div class="w-16 h-16 bg-primary-container/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl text-primary-container group-hover:text-white transition-colors duration-300" data-icon="book_5">book_5</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Bimbingan Belajar Agama Islam</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        Personalized tutoring focusing on the depths of Islamic philosophy, jurisprudence, and contemporary ethics for students of all levels.
+                    </p>
+<div class="pt-6 border-t border-slate-50 w-full">
+<ul class="space-y-3">
+<li class="flex items-center space-x-2 text-sm text-outline">
+<span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>
+<span>Curriculum-aligned learning</span>
+</li>
+<li class="flex items-center space-x-2 text-sm text-outline">
+<span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>
+<span>Critical thinking frameworks</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="group bg-white p-10 rounded-xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-primary-container/30 transition-all duration-300 flex flex-col items-start">
+<div class="w-16 h-16 bg-primary-container/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl text-primary-container group-hover:text-white transition-colors duration-300" data-icon="computer">computer</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Konsultasi Kurikulum Digital</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        Integrating modern technology into Islamic educational frameworks to create engaging, effective, and accessible digital learning experiences.
+                    </p>
+<div class="pt-6 border-t border-slate-50 w-full">
+<ul class="space-y-3">
+<li class="flex items-center space-x-2 text-sm text-outline">
+<span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>
+<span>LMS Strategy &amp; Design</span>
+</li>
+<li class="flex items-center space-x-2 text-sm text-outline">
+<span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>
+<span>Interactive content creation</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="group bg-white p-10 rounded-xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-primary-container/30 transition-all duration-300 flex flex-col items-start">
+<div class="w-16 h-16 bg-primary-container/10 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl text-primary-container group-hover:text-white transition-colors duration-300" data-icon="campaign">campaign</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">Narasumber Edukasi Islam</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">
+                        Expert speaking services for seminars, workshops, and panels, delivering scholarly insights with modern relevance and clarity.
+                    </p>
+<div class="pt-6 border-t border-slate-50 w-full">
+<ul class="space-y-3">
+<li class="flex items-center space-x-2 text-sm text-outline">
+<span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>
+<span>Keynote speaking</span>
+</li>
+<li class="flex items-center space-x-2 text-sm text-outline">
+<span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>
+<span>Workshop facilitation</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-24 bg-[#050d18] rounded-2xl overflow-hidden relative p-12 lg:p-20 text-white flex flex-col lg:flex-row items-center justify-between gap-12">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<img alt="Islamic Geometric Pattern" class="w-full h-full object-cover" data-alt="Intricate Islamic geometric patterns with subtle dark metallic textures and glowing edges, sophisticated and scholarly mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAznjjBZCgm-kuuQ6SNOtlDyt6r2MYdbtmkewGXeG1UYWq1I4uBsZ1-Vp6QGvas9Plc2UMFvtVuX2J9bj9P4z2782zSpPp_DSbWl4hXWmAb6goGzSEGiQ0mQJeB8UCMMhj55EtjDDUtiRzRsHw08qtRxfNCEKjXgbw6z9DLPz2-mCzmyriMs2NL1rmYARBRrHz96IQBswATWlkDAmqE5NYI0fVRaTlqE13sO69g6lB6FvFed26GXfibxYoAAoXWl8j3T4nfGaVMAjY"/>
+</div>
+<div class="relative z-10 max-w-2xl text-center lg:text-left">
+<h4 class="font-headline-lg text-headline-lg mb-4">Elevate your educational institution with scholarly expertise.</h4>
+<p class="text-slate-400 font-body-md text-body-md">Available for global consultations and speaking engagements focused on the intersection of faith and modern pedagogy.</p>
+</div>
+<div class="relative z-10 flex-shrink-0">
+<button class="bg-[#149DDD] text-white px-8 py-4 rounded-lg font-bold hover:bg-sky-600 transition-all duration-300 flex items-center space-x-2">
+<span>Schedule a Consultation</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<footer class="w-full py-8 mt-auto border-t border-slate-100 flex flex-col items-center justify-center space-y-4 px-10 font-['Space_Grotesk'] text-xs uppercase tracking-widest">
+<p class="text-slate-500">© 2024 Muhammad Zumar Fahmi Rizky. All rights reserved.</p>
+<div class="flex space-x-8">
+<a class="text-slate-500 hover:text-[#149DDD] underline-offset-4 hover:underline transition-opacity duration-200" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#149DDD] underline-offset-4 hover:underline transition-opacity duration-200" href="#">Terms of Service</a>
+</div>
+</footer>
+</main>
+</body></html>

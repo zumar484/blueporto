@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Inter:wght@100..900&amp;family=Newsreader:opsz,ital,wght@6..72,0,200..800;6..72,1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-primary": "#88ceff",
+                        "outline": "#6f7881",
+                        "secondary-fixed-dim": "#bfc7d4",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "background": "#f8f9fa",
+                        "on-tertiary-container": "#003421",
+                        "inverse-on-surface": "#f0f1f2",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#c8e6ff",
+                        "on-primary-fixed": "#001e2f",
+                        "on-secondary-container": "#5d6570",
+                        "on-background": "#191c1d",
+                        "tertiary-fixed-dim": "#66dca6",
+                        "primary": "#006590",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#3f4752",
+                        "on-surface": "#191c1d",
+                        "on-primary-container": "#003048",
+                        "surface-container-high": "#e7e8e9",
+                        "on-secondary-fixed": "#141c26",
+                        "surface-variant": "#e1e3e4",
+                        "surface-dim": "#d9dadb",
+                        "tertiary": "#006c49",
+                        "secondary-container": "#dbe3f1",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#27a776",
+                        "secondary-fixed": "#dbe3f1",
+                        "surface-container": "#edeeef",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#88ceff",
+                        "primary-container": "#149ddd",
+                        "on-surface-variant": "#3e4850",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#83f9c1",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "secondary": "#575f6a",
+                        "outline-variant": "#bec8d1",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary-fixed": "#002113",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#004c6e",
+                        "surface-container-low": "#f3f4f5",
+                        "surface": "#f8f9fa",
+                        "surface-tint": "#006590"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sidebar-width": "300px",
+                        "stack-md": "16px",
+                        "stack-sm": "8px",
+                        "gutter": "24px",
+                        "section-padding": "100px",
+                        "stack-lg": "32px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Space Grotesk"],
+                        "nav-link": ["Inter"],
+                        "body-md": ["Newsreader"],
+                        "headline-md": ["Space Grotesk"],
+                        "label-caps": ["Inter"],
+                        "body-lg": ["Newsreader"],
+                        "display-hero": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "nav-link": ["15px", {"lineHeight": "24px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "body-md": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-hero": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- SideNavBar -->
+<aside class="fixed h-screen w-[300px] left-0 top-0 hidden md:flex flex-col bg-[#050d18] border-r border-slate-800 shadow-2xl z-50 font-['Space_Grotesk'] text-sm tracking-wide">
+<div class="flex flex-col py-10 px-6 space-y-8 h-full">
+<!-- Profile Header -->
+<div class="flex flex-col items-center space-y-4 mb-4">
+<div class="w-32 h-32 rounded-full overflow-hidden border-4 border-slate-800 ring-2 ring-[#149DDD]">
+<img alt="Muhammad Zumar Fahmi Rizky" class="w-full h-full object-cover" data-alt="Professional portrait of a scholarly man with a warm smile, wearing modern academic attire, clean studio lighting, neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoxLK1Db0e5CnXHaGD9u8vqrw-RsE-6INvFEINcRYb6xuE5gmkHOfmIT58OslHDnnYuw2CTGtUFcvI-8FtyrcLnCR_a9fC70g1VPr4aLjieIgNwtxPXn-tNNz5yeXs4xj7zwfq4IL8JMbA17-FX0we-E3zfH1aHKH66SdEQ_ugwsuuVDJDUv9WluCKI1cEMndczoExdUe5FBu4wmx6iZdE7Vz-qjh32Te2r_ucz9iqTG1fDGyPEseaf_zte5KHpdrx3DnMeY3eCqI"/>
+</div>
+<div class="text-center">
+<h1 class="text-white text-xl font-bold mb-1">Muhammad Zumar Fahmi Rizky</h1>
+<p class="text-slate-400 text-xs uppercase tracking-widest">Islamic Education Scholar</p>
+</div>
+</div>
+<!-- Primary Nav -->
+<nav class="flex-grow space-y-2">
+<a class="flex items-center space-y-0 text-slate-400 hover:text-white transition-colors duration-300 pl-4 py-3 group hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined mr-3 text-lg group-hover:text-[#149DDD]">home</span>
+<span>Home</span>
+</a>
+<a class="flex items-center space-y-0 text-slate-400 hover:text-white transition-colors duration-300 pl-4 py-3 group hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined mr-3 text-lg group-hover:text-[#149DDD]">person</span>
+<span>About</span>
+</a>
+<a class="flex items-center space-y-0 text-[#149DDD] font-semibold border-l-4 border-[#149DDD] bg-sky-500/10 pl-4 py-3" href="#">
+<span class="material-symbols-outlined mr-3 text-lg">work</span>
+<span>Portfolio</span>
+</a>
+<a class="flex items-center space-y-0 text-slate-400 hover:text-white transition-colors duration-300 pl-4 py-3 group hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined mr-3 text-lg group-hover:text-[#149DDD]">description</span>
+<span>Resume</span>
+</a>
+<a class="flex items-center space-y-0 text-slate-400 hover:text-white transition-colors duration-300 pl-4 py-3 group hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined mr-3 text-lg group-hover:text-[#149DDD]">settings</span>
+<span>Service</span>
+</a>
+<a class="flex items-center space-y-0 text-slate-400 hover:text-white transition-colors duration-300 pl-4 py-3 group hover:bg-slate-800/50" href="#">
+<span class="material-symbols-outlined mr-3 text-lg group-hover:text-[#149DDD]">mail</span>
+<span>Contact</span>
+</a>
+</nav>
+<!-- Footer Nav -->
+<div class="pt-8 border-t border-slate-800 space-y-2">
+<a class="flex items-center text-slate-500 hover:text-[#149DDD] transition-all text-xs uppercase tracking-widest pl-4 py-2" href="#">
+<span class="material-symbols-outlined mr-3 text-sm">school</span>
+                    Academic Profile
+                </a>
+<a class="flex items-center text-slate-500 hover:text-[#149DDD] transition-all text-xs uppercase tracking-widest pl-4 py-2" href="#">
+<span class="material-symbols-outlined mr-3 text-sm">alternate_email</span>
+                    Contact
+                </a>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="md:ml-[300px] min-h-screen flex flex-col">
+<!-- Hero / Section Header -->
+<header class="relative py-24 px-10 bg-surface-container-low border-b border-outline-variant">
+<div class="max-w-6xl mx-auto">
+<span class="font-label-caps text-label-caps text-primary uppercase mb-4 block">My Works</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Portfolio</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Explore a curated selection of scholarly research, innovative learning media, and digital dawah initiatives focused on the advancement of Islamic Education.
+                </p>
+</div>
+</header>
+<!-- Portfolio Section -->
+<section class="py-20 px-10 flex-grow">
+<div class="max-w-6xl mx-auto">
+<!-- Filter Controls -->
+<div class="flex flex-wrap items-center gap-4 mb-12">
+<button class="px-6 py-2 rounded-full bg-primary-container text-on-primary-container font-nav-link text-nav-link shadow-md hover:opacity-90 transition-all">All Projects</button>
+<button class="px-6 py-2 rounded-full bg-white border border-outline-variant text-secondary font-nav-link text-nav-link hover:border-primary hover:text-primary transition-all">Research</button>
+<button class="px-6 py-2 rounded-full bg-white border border-outline-variant text-secondary font-nav-link text-nav-link hover:border-primary hover:text-primary transition-all">Media Pembelajaran</button>
+<button class="px-6 py-2 rounded-full bg-white border border-outline-variant text-secondary font-nav-link text-nav-link hover:border-primary hover:text-primary transition-all">Dakwah Digital</button>
+</div>
+<!-- Portfolio Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Research -->
+<div class="group bg-white border border-surface-variant rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-56 overflow-hidden">
+<img alt="Islamic Research Document" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of academic journals and a traditional Islamic manuscript on a wooden desk with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-fcNARiBvCulFX2PYB5LZuLI37OsLUDC_Ys9HKXM_ukECEQywtdCkJ_nBcewnhKBfEYlipP05uDlZIV5-GQ54mDLTdOQ_Vx3rVZEtunY5o9tNlur8fWkkKRsDGQwpcoAFaA0ChaAfbr_IdNTA8Qelo-0GH9z_YemEEy8sjZPkN3XXzkuICKFsnS7IreCvyUwQwvCIhva_PXczAtrX7sVhjOK4DLVy7XzgeohLJ7qwV-qRFW9yC6NgWj_eu2B0Z4YnFk_zEkxLqoQ"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white px-3 py-1 text-[10px] uppercase font-bold tracking-widest rounded-sm">Research</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Analisis Komparatif Metodologi Pendidikan Islam</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                                A comprehensive study comparing traditional and modern methodologies in Islamic educational institutions across Southeast Asia.
+                            </p>
+<div class="mt-auto">
+<button class="w-full py-3 border border-outline-variant rounded-lg text-primary font-nav-link text-nav-link hover:bg-primary hover:text-white transition-all flex items-center justify-center group/btn">
+                                    View Detail
+                                    <span class="material-symbols-outlined ml-2 text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Media Pembelajaran -->
+<div class="group bg-white border border-surface-variant rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-56 overflow-hidden">
+<img alt="Digital Learning Interface" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A tablet displaying a vibrant interactive Islamic learning app with Arabic calligraphy and modern UI elements, blurred classroom background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDreDjV1TCbS9QrUjdndJAxYQlJpJe4MwP2OyDGEcxdW9jo-mG-JikATaFoaXhRCCqf1pMHyov-uOKpi3MTZQZRpJixXc0gpCvCOXLeLl48lR7jqQyVBrmVYrtpithzzxU4uVusYk4HEYCTOvKaSOKmbxpu0_h_ZxC-pB3rAgVps-pDc3tufJEtRFbnotVrj_28ZefKr4FJbaFvNzqhXuyJQgGcqQIJggpD2oWkfw15jFfnE7h0FIXA25SMijSLQMjZdQkwjLj0sh0"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary/90 text-white px-3 py-1 text-[10px] uppercase font-bold tracking-widest rounded-sm">Media Pembelajaran</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Interactive Arabic Mastery Module</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                                Developing digital gamified assets for elementary level Arabic language learners to increase student engagement and retention.
+                            </p>
+<div class="mt-auto">
+<button class="w-full py-3 border border-outline-variant rounded-lg text-primary font-nav-link text-nav-link hover:bg-primary hover:text-white transition-all flex items-center justify-center group/btn">
+                                    View Detail
+                                    <span class="material-symbols-outlined ml-2 text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Dakwah Digital -->
+<div class="group bg-white border border-surface-variant rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-56 overflow-hidden">
+<img alt="Podcast Studio" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A modern podcasting setup with a high-quality microphone, soundproofing, and a warm aesthetic, focusing on professional content creation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqFLe1H82kwRIzaCiPY6amKNmm1FsBBc-ZdgU3QQB02WLpwJZ6B_t83awqNqUEzYoy2iswATg32-CBpcj40-W2v1gSLXmp2eUoR-TWQlht1HF-tVfSE_3qpkd8x2tov2Wsm1uddeLnJVq7sqvznRJrsdCBrVBlCg-s6J2T9lpicW-zTkmg0pEJhgwNLQCh0gXVpwO1cWqtGs-y3ihIs9kNqimYylp6-XT7LoK_XzhmcV5h4-v6wYniGvnvPoGMB_-6En-xRL201yg"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary/90 text-white px-3 py-1 text-[10px] uppercase font-bold tracking-widest rounded-sm">Dakwah Digital</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Nuansa Iman: Digital Audio Series</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                                A podcast series bridging the gap between classical Islamic theology and modern living for the digital generation.
+                            </p>
+<div class="mt-auto">
+<button class="w-full py-3 border border-outline-variant rounded-lg text-primary font-nav-link text-nav-link hover:bg-primary hover:text-white transition-all flex items-center justify-center group/btn">
+                                    View Detail
+                                    <span class="material-symbols-outlined ml-2 text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Research -->
+<div class="group bg-white border border-surface-variant rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-56 overflow-hidden">
+<img alt="Data Analytics Visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Digital dashboard with academic data visualizations, clean charts, and scholarly icons representing educational trends" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMt9bycoFPhRGfX5ZfTBqpp3-fgnlawuW-vaoMKUMvVvTEGa7yIjFIIW-bi36Axrj5HJdPoDD_z3L4HNvVESE6fr2THl-PFRDzkE6OkBwPnq9fxWG9wdzY_Tskqxxx_Ao_1x-ppihbJAXtggT2kzOrsl0xawqE7ANW5FKXCJu-q14mbVKcaT0K9N30FY7Ud7aiYabisg7cAHjwZ9TQPL7ipTKLEj5UgstsB9c3z0-NaOe_Qx9fyi3M4SybEHKvsTvT00cyMQKIu-M"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary/90 text-white px-3 py-1 text-[10px] uppercase font-bold tracking-widest rounded-sm">Research</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Epistemologi Ilmu dalam Perspektif Klasik</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                                Investigating the historical roots of knowledge classification in early Islamic scholarship and its relevance today.
+                            </p>
+<div class="mt-auto">
+<button class="w-full py-3 border border-outline-variant rounded-lg text-primary font-nav-link text-nav-link hover:bg-primary hover:text-white transition-all flex items-center justify-center group/btn">
+                                    View Detail
+                                    <span class="material-symbols-outlined ml-2 text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5: Media Pembelajaran -->
+<div class="group bg-white border border-surface-variant rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-56 overflow-hidden">
+<img alt="Video Editing Interface" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of a monitor showing a high-end video editing timeline for an educational Islamic documentary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy-VBBhqaXj50J_sb2X1i4O7G1_EpQDnxAWfyh4d3xivCP7CdddROGFuw4kGebKTku2jc4LvDH4OzD1YMutbn1yqQC66tbvuPObyd0jvwsepgy_92MPh2f-hcMM7FwWc2pKslbkL4nbgzf8Ph5FceyM57U2m1aw7TCtQyljupMP9QknIh0VHLvesUu5O--CZnoxlNdkECEs5tWlurXKdANlUZq1sVHjAqWPY6yP_5VKgcYECy3VQb7vfpdMQXx48dFDzyCPDergdU"/>
+<div class="absolute top-4 left-4">
+<span class="bg-tertiary/90 text-white px-3 py-1 text-[10px] uppercase font-bold tracking-widest rounded-sm">Media Pembelajaran</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Visualizing Fiqh: Animated Series</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                                A high-quality 2D animation series simplifying complex Fiqh concepts for secondary school students.
+                            </p>
+<div class="mt-auto">
+<button class="w-full py-3 border border-outline-variant rounded-lg text-primary font-nav-link text-nav-link hover:bg-primary hover:text-white transition-all flex items-center justify-center group/btn">
+                                    View Detail
+                                    <span class="material-symbols-outlined ml-2 text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6: Dakwah Digital -->
+<div class="group bg-white border border-surface-variant rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
+<div class="relative h-56 overflow-hidden">
+<img alt="Social Media Strategy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Hands holding a smartphone showing a clean, aesthetic Islamic quote graphic with elegant typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYkZeWnLoRik62vmYbKvVYmzXDLp-WK3slng11HusOEYhcKCbnJzry8MNhFR9ujAh5_oRhPCiwAkg24qthmIibDXFf0CP03s5VUXiVmHHclbwq2OIvGVUFHnrYM4sO4ncnmXJSBLyRG565q4rF1ZE6Tv_OOUTAexpo9ZKb85jnZBBOY_uCC_nm6GEogJLTJ4SvhXRt1izhBUvy0MZOvkuKyMWtoFcixxRl4mtZNwzndsIYLCqTh6EYhlI2EV46PNeBvvRs1lua4eU"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary/90 text-white px-3 py-1 text-[10px] uppercase font-bold tracking-widest rounded-sm">Dakwah Digital</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3 group-hover:text-primary transition-colors">Hikmah Hub: Social Content Strategy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3">
+                                Curating a content ecosystem across Instagram and TikTok that promotes moderate Islamic values through visual storytelling.
+                            </p>
+<div class="mt-auto">
+<button class="w-full py-3 border border-outline-variant rounded-lg text-primary font-nav-link text-nav-link hover:bg-primary hover:text-white transition-all flex items-center justify-center group/btn">
+                                    View Detail
+                                    <span class="material-symbols-outlined ml-2 text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-8 mt-auto bg-white border-t border-slate-100 flex flex-col items-center justify-center space-y-4 px-10">
+<div class="flex space-x-6 mb-2">
+<a class="text-slate-500 hover:text-[#149DDD] underline-offset-4 hover:underline transition-opacity duration-200 font-['Space_Grotesk'] text-xs uppercase tracking-widest" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-[#149DDD] underline-offset-4 hover:underline transition-opacity duration-200 font-['Space_Grotesk'] text-xs uppercase tracking-widest" href="#">Terms of Service</a>
+</div>
+<p class="text-slate-400 font-['Space_Grotesk'] text-xs uppercase tracking-widest text-center">
+                © 2024 Muhammad Zumar Fahmi Rizky. All rights reserved.
+            </p>
+</footer>
+</main>
+</body></html>
